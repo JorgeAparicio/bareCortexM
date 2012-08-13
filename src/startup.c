@@ -34,7 +34,7 @@ extern u32 __bss_end__;
 /**
  * @brief Loads initialized data to RAM, and clears uninitialized data.
  */
-static INLINE void initializeData(void)
+static INLINE void initializeData()
 {
   u32 *pSrc;
   u32 *pDest;
