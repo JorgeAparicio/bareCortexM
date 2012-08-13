@@ -53,7 +53,7 @@ static INLINE void initializeData()
     *pDest++ = 0;
 }
 
-void resetHandler()
+extern "C" void resetHandler()
 {
   initializeData();
 
