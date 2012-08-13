@@ -20,5 +20,8 @@
  ******************************************************************************/
 
 // Create an array of pointers to void functions with void argument and place
-// it in the "interrupt_vector" section (check the "vector table" chapter of
-// your device documentation.
+// it in the "interrupt_vector" section (use the "exception.cpp" source file
+// as an example).
+//
+// The user should take a look at the interrupt vector section of the target
+// device documentation.

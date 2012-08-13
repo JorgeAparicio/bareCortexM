@@ -20,5 +20,7 @@
  ******************************************************************************/
 
 // Implement your system calls here (check the "system calls" chapter of the
-// newlib c library documentation). If system calls are not needed use the
-// "libnosys.a" static library via the linker.
+// newlib c library documentation for more information).
+//
+// If the system calls aren't needed, use the "libnosys.a" static library via
+// the linker (Project > Properties > C/C++ Build > Settings > GCC C++ Linker).
