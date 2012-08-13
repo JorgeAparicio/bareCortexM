@@ -25,14 +25,14 @@
 extern char __StackTop;
 
 typedef uint32_t u32;
-typedef void (* const pvf)();
+typedef void (* pvf)();
 
 extern "C" void resetHandler();
 
 namespace exception {
   __attribute__ ((section(".exception_vector")))
-  void (* const exceptionVector[])() = {
-    (pvf)(&__StackTop),  // 0x0000
+    pvf exceptionVector[] = {
+    pvf(&__StackTop),  // 0x0000
     resetHandler,// 0x0004
     NMI,// 0x0008
     HardFault,// 0x000C
