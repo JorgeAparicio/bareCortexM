@@ -43,16 +43,14 @@ static INLINE void initializeData()
   pSrc = &__etext;
   pDest = &__data_start__;
 
-  while (pDest < &__data_end__) {
+  while (pDest < &__data_end__)
     *pDest++ = *pSrc++;
-  }
 
   // Clear uninitialized data
   pDest = &__bss_start__;
 
-  while (pDest < &__bss_end__) {
+  while (pDest < &__bss_end__)
     *pDest++ = 0;
-  }
 }
 
 void resetHandler()
