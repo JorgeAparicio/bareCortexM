@@ -2,7 +2,7 @@
 <launchConfiguration type="com.zylin.embeddedcdt.idleNative">
 <booleanAttribute key="com.zylin.embeddedcdt.debugger_app_console" value="false"/>
 <stringAttribute key="org.eclipse.cdt.debug.mi.core.DEBUG_NAME" value="arm-none-eabi-gdb"/>
-<stringAttribute key="org.eclipse.cdt.debug.mi.core.GDB_INIT" value="gdb/stm32f407ve.script"/>
+<stringAttribute key="org.eclipse.cdt.debug.mi.core.GDB_INIT" value="gdb/stm32f407vg.script"/>
 <booleanAttribute key="org.eclipse.cdt.debug.mi.core.breakpointsFullPath" value="false"/>
 <stringAttribute key="org.eclipse.cdt.debug.mi.core.commandFactory" value="org.eclipse.cdt.debug.mi.core.standardCommandFactory"/>
 <stringAttribute key="org.eclipse.cdt.debug.mi.core.protocol" value="mi2"/>
