@@ -52,11 +52,55 @@ This project uses extensively the following tools:
 + openOCD
   (http://openocd.sourceforge.net/)
 
-INSTALLATION AND USE
-====================
+INSTALLATION
+============
 
-Check the wiki of the project.
+Check the wiki for the installation steps.
 (https://github.com/JorgeAparicio/bareCortexM/wiki)
+
+CONFIGURATION
+=============
+
+You'll need to configure the project for your specific target, interface and
+platform.
+
++ Choose your platform.
+	- Go to Menu > Project > Properties.
+	- C/C++ Build.
+	- Click the Manage Configuration button next to the Configuration combo box.
+	- Select your platform and click the Set Active button.
+
++ Select the correct linker script.
+	- Go to Menu > Project > Properties.
+	- C/C++ Build > Settings.
+	- ARM Sourcery GCC C++ Linker > General.
+	- Type in the Script file box: ../linker/<your target>.ld
+	- The list of supported devices is in the linker folder.
+	
++ Select the correct linker script.
+	- Go to Menu > Project > Properties.
+	- C/C++ Build > Settings.
+	- ARM Sourcery GCC C++ Linker > General.
+	- Type in the Script file box: ../linker/<your target>.ld
+	- The list of supported devices is in the linker folder.
+	
++ Configure the OpenOCD.
+	- Go to Menu > Run > External Tools > External Tool Configurations.
+	- Program > OpenOCD.
+	- On the main tab:
+	- Verify the OpenOCD location.
+	- Modify the argument to match your interface and target:
+	- -f openocd/interface/<interface>.cfg -f openocd/target/<target>.cfg
+	- The list of supported interfaces is in the folder openocd > interface.
+	- The list of supported targets is in the folder openocd > target.
+
++ Select the correct GDB script.
+	- Go to Menu > Run > Debug Configurations.
+	- Zylin Embedded debug (Native) > Flash and Debug.
+	- On the Debugger tab.
+	- Modify the GDB script:
+	- gdb/<your target>.script
+	- The list of supported targets is in the gdb folder.
 
 LICENSE
 =======
