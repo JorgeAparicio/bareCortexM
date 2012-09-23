@@ -76,15 +76,8 @@ platform.
 	- ARM Sourcery GCC C++ Linker > General.
 	- Type in the Script file box: ../linker/<your target>.ld
 	- The list of supported devices is in the linker folder.
-	
-+ Select the correct linker script.
-	- Go to Menu > Project > Properties.
-	- C/C++ Build > Settings.
-	- ARM Sourcery GCC C++ Linker > General.
-	- Type in the Script file box: ../linker/<your target>.ld
-	- The list of supported devices is in the linker folder.
-	
-+ Configure the OpenOCD.
+		
++ Configure OpenOCD.
 	- Go to Menu > Run > External Tools > External Tool Configurations.
 	- Program > OpenOCD.
 	- On the main tab:
